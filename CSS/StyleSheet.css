@@ -7,6 +7,30 @@ html, body{
     
 }
 
+@font-face{
+    font-family: blockText;
+    src: url("../Fonts/maniac.ttf") format("ttf");
+    src: url("../Fonts/maniac.ttf") format("woff");
+    src: url("../Fonts/maniac.ttf") format("woff2");
+    
+}
+
+h1{
+    font-family: blockText;
+    margin: 0px;
+    vertical-align: top;
+}
+
+#align-left{
+    position: absolute;
+    left: 0px;
+}
+
+#align-right{
+    position: absolute;
+    right: 0px;
+}
+
 /*HEADER*/
 
 header{
@@ -14,27 +38,64 @@ header{
     padding: 0;
 }
 
+#main-header{
+    position: absolute;
+    font-family: blockText;
+    margin: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.heartbeat{
+    height: 60px;
+    width: 42vw;
+    opacity: 0.5;
+}
+
 #header-cont{
+    position: relative;
     position: fixed;
     z-index: 100;
-    height: 60px;
+    height: 65px;
     width: 100vw;
     margin: 0;
     padding: 0;
     background: #242626;
-    color: red;
     box-shadow: 10px 0px  5px black;
 }
 
 #header-left{
+    display: inline-block;
+    width: 30vw;
+    height: 60px;
+    position: relative;
     
 }
 
 #header-center{
-    
+    display: inline-block;
+    vertical-align: top;
+    width: 30vw;
+    height: 60px;
+    color: white;
+    margin: 0;
+   
 }
 
 #header-right{
+    display: inline-block;
+    width: 30vw;
+    height: 60px;
+    background: purple;
+}
+
+#record-logo{
+    position: absolute;
+    height: 70px;
+    top: 5px;
+    left: 5px;
     
 }
 
@@ -43,14 +104,16 @@ header{
 main{
     margin: 0;
     padding: 0;
+    background: #F5EBEB;
 }
 
 #main-cont{
     width: 75vw;
     height: 100vw;
     margin: 0 auto;
-    background: yellow;
+    background: #BABABA;
     padding-top: 150px;
+    box-shadow: inset 0 0 10px #000000;
 }
 
 #post-cont{
@@ -65,6 +128,7 @@ main{
 
 #post-left{
     position: absolute;
+    z-index: 50;
     left: 0px;
     height: 100%;
     width: 10px;
@@ -73,14 +137,28 @@ main{
 }
 
 #post-main{
-    position: absolute;
-    width: 100%;
+    padding-left: 100px;
     padding: 0px;
-    left: 25px;
 }
 
 #post-title{
-    width: 75%;
-    background: rgba(245,0,0,0.8);
+    background: rgba(245,0,0,0.7);
     padding: 0px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#post-title h2{
+    display: inline-block;
+    font-family: blockText;
+    color: white;
+    font-size: 15px;
+    padding: 0;
+    text-align: left;
+}
+
+#post-info{
+    position: absolute;
+    right: 0px;
+    margin: 5px; 
 }
